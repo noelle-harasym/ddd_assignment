@@ -9,6 +9,10 @@ class Favorite < ApplicationRecord
 
   # Indirect associations
 
+  has_one    :cuisine,
+             :through => :dish,
+             :source => :cuisine
+
   # Validations
 
   # Scopes

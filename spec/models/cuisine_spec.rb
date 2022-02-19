@@ -10,6 +10,8 @@ RSpec.describe Cuisine, type: :model do
 
     describe "InDirect Associations" do
 
+    it { should have_many(:favorites) }
+
     end
 
     describe "Validations" do

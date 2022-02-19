@@ -14,6 +14,8 @@ RSpec.describe Favorite, type: :model do
 
     describe "InDirect Associations" do
 
+    it { should have_one(:cuisine) }
+
     end
 
     describe "Validations" do
