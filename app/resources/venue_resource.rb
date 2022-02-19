@@ -9,6 +9,8 @@ class VenueResource < ApplicationResource
 
   # Direct associations
 
+  belongs_to :neighborhood
+
   has_many   :favorites
 
   # Indirect associations
