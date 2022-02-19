@@ -1,5 +1,7 @@
 ActiveAdmin.register Favorite do
 
+ permit_params :venue_id, :dish_id, :notes, :user_id
+
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
