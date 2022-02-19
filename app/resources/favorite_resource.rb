@@ -21,7 +21,7 @@ class FavoriteResource < ApplicationResource
 
   filter :cuisine_id, :integer do
     eq do |scope, value|
-      scope.eager_load(:cuisine).where(:dishes => {:cuisine_id => value})
+      scope.eager_load(:cuisine).where(dishes: { cuisine_id: value })
     end
   end
 end

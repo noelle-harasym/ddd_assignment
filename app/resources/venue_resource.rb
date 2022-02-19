@@ -14,5 +14,4 @@ class VenueResource < ApplicationResource
   has_many   :favorites
 
   # Indirect associations
-
 end

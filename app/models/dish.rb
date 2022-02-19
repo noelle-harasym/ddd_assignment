@@ -4,7 +4,7 @@ class Dish < ApplicationRecord
   belongs_to :cuisine
 
   has_many   :favorites,
-             :dependent => :destroy
+             dependent: :destroy
 
   # Indirect associations
 
@@ -15,5 +15,4 @@ class Dish < ApplicationRecord
   def to_s
     name
   end
-
 end

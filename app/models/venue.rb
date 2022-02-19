@@ -4,7 +4,7 @@ class Venue < ApplicationRecord
   belongs_to :neighborhood
 
   has_many   :favorites,
-             :dependent => :destroy
+             dependent: :destroy
 
   # Indirect associations
 
@@ -15,5 +15,4 @@ class Venue < ApplicationRecord
   def to_s
     name
   end
-
 end

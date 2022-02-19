@@ -10,8 +10,8 @@ class Favorite < ApplicationRecord
   # Indirect associations
 
   has_one    :cuisine,
-             :through => :dish,
-             :source => :cuisine
+             through: :dish,
+             source: :cuisine
 
   # Validations
 
@@ -20,5 +20,4 @@ class Favorite < ApplicationRecord
   def to_s
     venue.to_s
   end
-
 end

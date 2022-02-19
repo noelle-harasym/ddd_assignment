@@ -12,5 +12,4 @@ class DishResource < ApplicationResource
   has_many   :favorites
 
   # Indirect associations
-
 end

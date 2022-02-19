@@ -8,8 +8,7 @@ class UserResource < ApplicationResource
 
   # Direct associations
 
-  has_many   :favorites
+  has_many :favorites
 
   # Indirect associations
-
 end
